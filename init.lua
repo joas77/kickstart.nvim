@@ -99,7 +99,7 @@ do
   vim.g.maplocalleader = ' '
 
   -- Set to true if you have a Nerd Font installed and selected in the terminal
-  vim.g.have_nerd_font = false
+  vim.g.have_nerd_font = true
 
   -- [[ Setting options ]]
   --  See `:help vim.o`
@@ -171,6 +171,14 @@ do
   -- instead raise a dialog asking if you wish to save the current file(s)
   -- See `:help 'confirm'`
   vim.o.confirm = true
+
+-- JULIO custom stuff BEGIN
+local TABSIZE = 4
+vim.o.tabstop = TABSIZE
+vim.o.shiftwidth = TABSIZE
+vim.o.softtabstop = TABSIZE
+vim.o.expandtab = true
+-- JULIO custom stuff END
 
   -- [[ Basic Keymaps ]]
   --  See `:help vim.keymap.set()`
